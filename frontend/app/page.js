@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import TopBar from "./components/TopBar";
 
-const API_BASE = "http://localhost:8000";
+// const API_BASE = "http://localhost:8000";
+const API_BASE = "https://ai-driven-ticket-management-and-helpdesk.onrender.com";
 
 /** Formats the AI markdown-lite response: bold **text**, inline `code`. */
 function formatMessage(text) {
@@ -40,13 +41,12 @@ function Message({ msg }) {
 
         {/* Main bubble */}
         <div
-          className={`message-bubble ${
-            msg.resolved === true
-              ? "resolved"
-              : msg.resolved === false
+          className={`message-bubble ${msg.resolved === true
+            ? "resolved"
+            : msg.resolved === false
               ? "escalated"
               : ""
-          }`}
+            }`}
           dangerouslySetInnerHTML={{ __html: formatMessage(msg.content) }}
         />
 
