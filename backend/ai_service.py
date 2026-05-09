@@ -34,7 +34,7 @@ logger = logging.getLogger(__name__)
 _HF_TEXT_MODEL = "Qwen/Qwen2.5-7B-Instruct"
 
 # Vision model (capable of reading images) for screenshot tickets
-_HF_VISION_MODEL = "Qwen/Qwen2.5-7B-Instruct"
+_HF_VISION_MODEL = "AumCoreAI/HF-BLIP2-Image-Reader"
 
 # Environment — NODE_ENV is the primary deployment identifier per project spec.
 _NODE_ENV = os.getenv("NODE_ENV", "development")
