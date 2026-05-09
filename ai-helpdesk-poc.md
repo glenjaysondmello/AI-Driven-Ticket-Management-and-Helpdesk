@@ -37,27 +37,27 @@ WEB & BACKEND
 ```
 
 ## Task Breakdown
-- [ ] **Task 1: Project Initialization** (Agent: `orchestrator`, Skill: `bash-linux`)
+- [x] **Task 1: Project Initialization** (Agent: `orchestrator`, Skill: `bash-linux`)
   - Create `/frontend` with `npx create-next-app` and `/backend` with FastAPI requirements.
   - → Verify: Both dev servers can start without errors.
 
-- [ ] **Task 2: Backend Mock Data & Ingestion (BB1)** (Agent: `backend-specialist`, Skill: `python-patterns`)
+- [x] **Task 2: Backend Mock Data & Ingestion (BB1)** (Agent: `backend-specialist`, Skill: `python-patterns`)
   - Create `data.py` with mock GitHub docs, users, and an in-memory ticket store.
   - → Verify: Can retrieve mock documents via a test function.
 
-- [ ] **Task 3: Backend Chat & Vision API (BB2)** (Agent: `backend-specialist`, Skill: `api-patterns`)
+- [x] **Task 3: Backend Chat & Vision API (BB2)** (Agent: `backend-specialist`, Skill: `api-patterns`)
   - Create endpoint `/api/chat` that accepts text and image upload. Integrate mock AI logic.
   - → Verify: `curl` request to endpoint returns an AI response or escalation flag.
 
-- [ ] **Task 4: Backend Routing & SLA API (BB3 & BB4)** (Agent: `backend-specialist`, Skill: `api-patterns`)
+- [x] **Task 4: Backend Routing & SLA API (BB3 & BB4)** (Agent: `backend-specialist`, Skill: `api-patterns`)
   - Create `/api/tickets` to handle escalation matching logic and `/api/sla` to return ticket metrics.
   - → Verify: Calling the endpoints returns assigned tickets and SLA stats correctly.
 
-- [ ] **Task 5: Frontend Chat UI (BB2)** (Agent: `frontend-specialist`, Skill: `frontend-design`)
+- [x] **Task 5: Frontend Chat UI (BB2)** (Agent: `frontend-specialist`, Skill: `frontend-design`)
   - Build chat interface with text input and image upload. Connect to `/api/chat`.
   - → Verify: User can send a message and see the AI's response in the UI.
 
-- [ ] **Task 6: Frontend Dashboard UI (BB4)** (Agent: `frontend-specialist`, Skill: `frontend-design`)
+- [x] **Task 6: Frontend Dashboard UI (BB4)** (Agent: `frontend-specialist`, Skill: `frontend-design`)
   - Build SLA dashboard with metrics cards and a ticket table. Fetch from `/api/sla`.
   - → Verify: Dashboard renders correctly with data from backend.
 
